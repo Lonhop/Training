@@ -35,6 +35,5 @@ for i in range(len(num)):
     p=num[i]
     for k in range(len(p)):
         if p[k]>=250:
-            c+=1
-            #Вычисляем кол-во из нашего ключа
-print(c)
+           c+=1 #Вычисляем кол-во из нашего ключа
+ print(c)
