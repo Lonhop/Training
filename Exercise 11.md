@@ -28,15 +28,15 @@ m={}
 
 for i in range(4):
 
-    s=list(f.readline().split())
+   s=list(f.readline().split())
     
-    if int(s[3]) in m:
+   if int(s[3]) in m:
     
-        m[int(s[3])]+=[int(s[4])]
+   m[int(s[3])]+=[int(s[4])]
         
-    else:
+   else:
     
-        m[int(s[3])]=[int(s[4])]
+   m[int(s[3])]=[int(s[4])]
         
 c=0
 
@@ -46,15 +46,15 @@ num=[x[1] for x in m.items() if x[0]==9]
 
 for i in range(len(num)):
 
-    p=num[i]
+   p=num[i]
     
-    for k in range(len(p)):
+   for k in range(len(p)):
     
-        if p[k]>=250:
+  if p[k]>=250:
         
-            c+=1
+  c+=1
             
-            #Вычисляем кол-во из нашего ключа
+  #Вычисляем кол-во из нашего ключа
             
 
 print(c)
