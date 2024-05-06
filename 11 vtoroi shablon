@@ -1,0 +1,8 @@
+import openpyxl
+book = openpyxl.open("f.xlsx",read_only=True)
+sheet = book.active
+k = 0
+for i in range(2,1002):
+    if sheet[i][2].value == 9 and sheet[i][3].value > 250:
+        k+=1
+print(k)
